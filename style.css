@@ -1,52 +1,67 @@
-
+:root{
+    --background: #6A868C;
+}
 body{
     display: flex;
     margin: 0%;
-}
-img{
     height: 100vh;
-    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+}
+.image{
+    display: flex;
+    flex-grow: 1;
+}
+h1{
+    padding-left: 16px;
+    color: #ffffff;
+}
+.img{
+    width: 100%;
 }
 .container{
     display: flex;
-    flex-grow: 1;
+    width: 50%;
+    height: 60%;
+    overflow:hidden;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px ;
 }
 .login-container{
     display: flex;
     flex-direction: column;
-    flex: 2;
-    width: 100%;
-    height: 100%;
 }
 .loginpanel1{
     display: flex;
     flex-grow: 1;
     align-items: flex-end;
-    padding: 16px;
-    background-color: beige;
+    box-sizing: border-box;
+    background-color: var(--background);
 }
 .loginpanel2{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    padding: 16px;
+    flex-grow: 2;
     justify-content: center;
+    background-color: #91A8AF;
 }
 .loginpanel3{
     display: flex;
-    flex-grow: 1;
-    padding: 16px;
-    background-color: beige;
+    background-color: var(--background);
+    padding: 16px
 }
 label{
-    display: block;
-    width: 100%;
+    display: flex;
+    overflow: hidden;
     padding: 4px;
+    color: #ffffff;
 }
 input{
-    display: block;
-    width: 100%;
+    display: flex;
+    overflow: hidden;
     padding: 4px;
+    colo
 }
 ul{
     display: flex;
@@ -54,16 +69,35 @@ ul{
     flex-wrap: wrap;
     justify-self: start;
     align-content: center;
-    width: 60%;
+    box-sizing: border-box;
+    padding: 4px;
 }
 li{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 8px;
-    width: 40%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 4px;
 }
 button{
     height: 60px;
     width: 120px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #77B5C4;
+}
+@media only screen and (max-width:1170px){
+    .container{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .login-container{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    
 }
