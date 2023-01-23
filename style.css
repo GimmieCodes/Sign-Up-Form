@@ -32,6 +32,7 @@ h1{
 }
 .login-container{
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
 }
 .loginpanel1{
@@ -112,4 +113,12 @@ button{
         width: 100%;
     }
     
+}
+@media only screen and (max-width:521px){
+    body{
+        height: fit-content;
+    }
+    .container{
+        width: 90%;
+    }
 }
