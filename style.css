@@ -12,12 +12,13 @@ body{
 }
 .image{
     display: flex;
-    flex-grow: 1;
+    
 }
 h1{
     padding-left: 16px;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 3.3vw;
+
 }
 .img{
     width: 100%;
@@ -32,7 +33,6 @@ h1{
 }
 .login-container{
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
 }
 .loginpanel1{
@@ -40,6 +40,7 @@ h1{
     align-items: flex-end;
     box-sizing: border-box;
     background-color: var(--background);
+    overflow: hidden;
 }
 .loginpanel2{
     display: flex;
@@ -51,7 +52,8 @@ h1{
 .loginpanel3{
     display: flex;
     background-color: var(--background);
-    padding: 16px
+    padding: 16px;
+    height: 100%;
 }
 label{
     display: flex;
